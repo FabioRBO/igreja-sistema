@@ -20,11 +20,11 @@ class MemberResource extends Resource
     protected static ?string $pluralModelLabel = 'Membros';
     protected static ?string $navigationLabel = 'Membros';
     protected static string|\UnitEnum|null $navigationGroup = 'Cadastros';
-    protected static ?int $navigationSort = 4;
+    protected static ?int $navigationSort = 2;
 
     protected static ?string $model = Member::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedUsers;
 
     protected static ?string $recordTitleAttribute = 'registration_number';
 

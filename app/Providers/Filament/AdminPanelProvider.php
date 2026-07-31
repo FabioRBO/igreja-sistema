@@ -22,7 +22,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
-
+use App\Filament\Widgets\DailyVerseWidget;
 use App\Filament\Widgets\DashboardOverview;
 
 class AdminPanelProvider extends PanelProvider
@@ -48,6 +48,7 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 DashboardOverview::class,
                 AccountWidget::class,
+                DailyVerseWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
