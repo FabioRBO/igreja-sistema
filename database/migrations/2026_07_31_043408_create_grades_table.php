@@ -8,7 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('grades', function (Blueprint $table) {
+        Schema::create('assessment_grades', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
 
@@ -44,6 +44,6 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::dropIfExists('grades');
+        Schema::dropIfExists('assessment_grades');
     }
 };
