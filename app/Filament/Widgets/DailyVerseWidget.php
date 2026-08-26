@@ -10,7 +10,12 @@ class DailyVerseWidget extends Widget
 {
     protected string $view = 'filament.widgets.daily-verse-widget';
 
-    protected int|string|array $columnSpan = 1;
+    //protected int|string|array $columnSpan = 1;
+
+    protected int|string|array $columnSpan = [
+        'md' => 2,
+        'xl' => 2,
+    ];
 
     public string $verse = '';
     public string $reference = '';

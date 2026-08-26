@@ -6,14 +6,12 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Pages\Dashboard;
+// use Filament\Pages\Dashboard;
+use App\Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Enums\Width;
 use Filament\Support\Colors\Color;
-
-use Filament\Widgets\AccountWidget;
-use Filament\Widgets\FilamentInfoWidget;
 
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
@@ -22,8 +20,13 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 
+use Filament\Widgets\AccountWidget;
+use Filament\Widgets\FilamentInfoWidget;
 use App\Filament\Widgets\DailyVerseWidget;
 use App\Filament\Widgets\DashboardOverview;
+use App\Filament\Widgets\BirthdaysWidget;
+use App\Filament\Widgets\UpcomingBaptismsWidget;
+use App\Filament\Widgets\UpcomingWorshipTeamWidget;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -49,6 +52,9 @@ class AdminPanelProvider extends PanelProvider
                 DashboardOverview::class,
                 AccountWidget::class,
                 DailyVerseWidget::class,
+                BirthdaysWidget::class,
+                UpcomingBaptismsWidget::class,
+                UpcomingWorshipTeamWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
