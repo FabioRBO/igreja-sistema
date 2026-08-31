@@ -27,6 +27,7 @@ use App\Filament\Widgets\DashboardOverview;
 use App\Filament\Widgets\BirthdaysWidget;
 use App\Filament\Widgets\UpcomingBaptismsWidget;
 use App\Filament\Widgets\UpcomingWorshipTeamWidget;
+use App\Filament\Widgets\WeddingAnniversariesWidget;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -55,6 +56,7 @@ class AdminPanelProvider extends PanelProvider
                 BirthdaysWidget::class,
                 UpcomingBaptismsWidget::class,
                 UpcomingWorshipTeamWidget::class,
+                WeddingAnniversariesWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -66,6 +68,7 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+                
             ])
             ->authMiddleware([
                 Authenticate::class,

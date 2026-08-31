@@ -22,7 +22,7 @@ class CellResource extends Resource
     protected static ?string $pluralModelLabel = 'Células';
     protected static ?string $navigationLabel = 'Células';
     protected static string|\UnitEnum|null $navigationGroup = 'Cadastros';
-    protected static ?int $navigationSort = 6;
+    protected static ?int $navigationSort = 8;
 
     protected static ?string $model = Cell::class;
 

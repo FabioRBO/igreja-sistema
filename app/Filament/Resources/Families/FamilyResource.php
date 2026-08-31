@@ -24,7 +24,7 @@ class FamilyResource extends Resource
 
     protected static string|\UnitEnum|null $navigationGroup = 'Cadastros';
 
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 4;
 
     protected static ?string $model = Family::class;
 

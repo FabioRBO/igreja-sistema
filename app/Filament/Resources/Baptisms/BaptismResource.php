@@ -23,7 +23,7 @@ class BaptismResource extends Resource
     protected static ?string $pluralModelLabel = 'Batismo';
     protected static ?string $navigationLabel = 'Batismo';
     protected static string|\UnitEnum|null $navigationGroup = 'Cadastros';
-    protected static ?int $navigationSort = 5;
+    protected static ?int $navigationSort = 12;
 
     protected static ?string $model = Baptism::class;
 

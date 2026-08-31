@@ -20,7 +20,7 @@ class Birthdays extends Page
 
     protected static ?string $title = 'Aniversariantes';
 
-    protected static ?int $navigationSort = 3;
+    protected static ?int $navigationSort = 5;
 
     protected string $view = 'filament.pages.birthdays';
 

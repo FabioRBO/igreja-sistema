@@ -32,7 +32,7 @@ class EmployeeResource extends Resource
 
     protected static ?string $pluralModelLabel = 'Funcionários';
 
-    protected static ?int $navigationSort = 9;
+    protected static ?int $navigationSort = 15;
 
     public static function form(Schema $schema): Schema
     {

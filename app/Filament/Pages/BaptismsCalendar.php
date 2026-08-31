@@ -20,7 +20,7 @@ class BaptismsCalendar extends Page
 
     protected static ?string $title = 'Calendário de Batismos';
 
-    protected static ?int $navigationSort = 7;
+    protected static ?int $navigationSort = 13;
 
     protected string $view = 'filament.pages.baptisms-calendar';
 

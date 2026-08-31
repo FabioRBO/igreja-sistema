@@ -23,7 +23,7 @@ class CellParticipantResource extends Resource
     protected static ?string $pluralModelLabel = 'Célula - Participantes';
     protected static ?string $navigationLabel = 'Célula - Participantes';
     protected static string|\UnitEnum|null $navigationGroup = 'Cadastros';
-    protected static ?int $navigationSort = 7;
+    protected static ?int $navigationSort = 9;
 
     protected static ?string $model = CellParticipant::class;
 

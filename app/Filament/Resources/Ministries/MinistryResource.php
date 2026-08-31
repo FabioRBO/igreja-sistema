@@ -20,7 +20,7 @@ class MinistryResource extends Resource
     protected static ?string $pluralModelLabel = 'Ministérios';
     protected static ?string $navigationLabel = 'Ministérios';
     protected static string|\UnitEnum|null $navigationGroup = 'Cadastros';
-    protected static ?int $navigationSort = 4;
+    protected static ?int $navigationSort = 14;
 
     protected static ?string $model = Ministry::class;
 
